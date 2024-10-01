@@ -12,7 +12,7 @@ def read_config(path):
             py_path = lines[1].replace('#', '').replace(' ', '').strip()
         except (IndexError, ValueError):
             print("配置文件格式错误")
-            return None, None, None
+            return None, None
     return frequency, py_path
 
 def job(path, py_path='python'):
